@@ -21,7 +21,7 @@ rs_km = rs_meters /1000
 print("black hole is 10 solar masses")
 print(f"Swarzschild radius(EVENT HORIZION): {rs_km:.2f} km\n")
 
-r_distances =np.linspace(1.01 * rs_meters * 5 * rs_meters, 500)
+r_distances = np.linspace(1.01 * rs_meters, 5 * rs_meters, 500)
 dilationfactor = calc_time_dilation(r_distances, rs_meters)
 
 plt.figure(figsize=(9,5))
